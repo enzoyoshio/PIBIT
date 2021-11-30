@@ -17,9 +17,9 @@ import json2csv
 seed()
 
 # inicializando variaveis
-key = "ab8f4d64209d063cda053683ce071a17c0dd3a05" #input("Insira a API Key: ")								# cada um usa sua propria key e secret
-secret = "72846e6b92749b4326c43f3aeb98d1a4ca129964" #input("Insira a API Secret: ") 							
-cfId = 351460 #input("Insira o Id do contest (eh o numero que se encontra na url): ") 			# para o exemplo o Id eh 351460
+key = input("Insira a API Key: ")								# cada um usa sua propria key e secret
+secret = input("Insira a API Secret: ") 							
+cfId = input("Insira o Id do contest (eh o numero que se encontra na url): ") 			# para o exemplo o Id eh 351460
 tempo = calendar.timegm(datetime.utcnow().utctimetuple()) 
 stringRand = getStrRand()
 stringHash =  f'contest.standings?apiKey={key}&contestId={cfId}&time={tempo}#{secret}'
