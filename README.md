@@ -15,4 +15,4 @@ Caso o programa esteja quebrando por falta de alguma biblioteca, digite no termi
 
 **pip install -r requirements.txt**
 
-![Alt text](print.png)
+![Alt text](/images/print.png)
