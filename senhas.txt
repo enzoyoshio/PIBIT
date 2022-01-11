@@ -1,0 +1,6 @@
+github token:
+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
+cf key:
+ab8f4d64209d063cda053683ce071a17c0dd3a05
+cf secret:
+72846e6b92749b4326c43f3aeb98d1a4ca129964
