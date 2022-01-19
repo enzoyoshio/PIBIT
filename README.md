@@ -1,3 +1,4 @@
+# DEPRECATED -> have to update readme -> todo
 # PIBIT
 
 Atualmente o script busca os standings em um contest de um grupo e transforma os dados dos standings em um arquivo csv.
