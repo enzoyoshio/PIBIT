@@ -37,4 +37,4 @@ def getStandings(key, secret, cfId):
 
 	# print(json.dumps(request.json(), sort_keys=True, indent=4))
 
-	json2csv.json2csv(request.json())
+	json2csv.json2csv(request.json(), cfId)

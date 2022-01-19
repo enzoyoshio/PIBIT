@@ -5,7 +5,7 @@ import csv
 
 abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def json2csv(json_file):
+def json2csv(json_file, idd):
 	# wont't check if it really is a json file, just pray that people will have sense
 
 	questoes = len(json_file['result']['problems'])
@@ -25,7 +25,7 @@ def json2csv(json_file):
 	# do we need teamID?
 	# do we need start time?
 	# append none or the string none?
-	with open('parsed.csv', 'w', encoding='UTF8') as f:
+	with open(str(idd) + '.csv', 'w', encoding='UTF8') as f:
 		writer = csv.writer(f)
 		writer.writerow(header)
 

@@ -61,5 +61,6 @@ for box in helper:
 with open("contests_ids.txt", "w") as f:
 	for idd in ids:
 		f.write(idd)
+		f.write('\n')
 
 driver.quit()
