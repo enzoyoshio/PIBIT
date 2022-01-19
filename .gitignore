@@ -1,2 +1,4 @@
 teste
 senhas.txt
+/main/*.log
+/main/__pycache__
