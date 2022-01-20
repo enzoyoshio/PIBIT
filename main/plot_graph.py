@@ -8,7 +8,7 @@ handle = 'wallacebt'
 x_axis = []
 con_ids = []
 ii = 1
-with open('../contests_ids.txt', 'r') as f:
+with open('contests_ids.txt', 'r') as f:
 	lines = f.readlines()
 	for idx in lines:
 		con_ids.append(idx.strip())
@@ -18,7 +18,7 @@ with open('../contests_ids.txt', 'r') as f:
 y_axis = []
 
 for idx in con_ids:
-	with open('../all_standings/' + str(idx) + '.csv', 'r') as f:
+	with open('all_standings/' + str(idx) + '.csv', 'r') as f:
 		reader = csv.reader(f)
 		for row in reader:
 			if row[1] == handle or row[2] == handle or row[3] == handle:
