@@ -1,3 +1,5 @@
+# maybe need improvement -> use promise and awati stuff
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from time import sleep
@@ -10,6 +12,9 @@ driver.implicitly_wait(20)
 
 # entrando na pagina do CF
 driver.get("http://codeforces.com/enter?back=%2F")
+
+# handle e senha aqui n eh mto interessante mas...
+# tem outra solução?
 
 # inserindo o handle
 handle = driver.find_element(By.ID, "handleOrEmail")
@@ -29,6 +34,7 @@ clicar = driver.find_element(By.XPATH, '//a[@href="/groups/my"]')
 clicar.click()
 
 # clicando no grupo PC1
+# fazer dinamico -> como saber qual o grupo ? 
 entrar_grupo = driver.find_element(By.XPATH, '//a[@href="/group/kS016T9X2j"]')
 entrar_grupo.click()
 

@@ -5,6 +5,8 @@ import csv
 
 abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+# create not a csv directly in files, create an element that represents
+# a csv and then returns it? so we can have stuff
 def json2csv(json_file, idd):
 	# wont't check if it really is a json file, just pray that people will have sense
 
