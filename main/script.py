@@ -21,17 +21,22 @@ from datetime import datetime
 import calendar
 import json2csv
 from standings import getStandings
+from get_contest_ids import get_contest_ids
 
 cfKey = ""
 cfSecret = ""
+user = ""
+password = ""
+# pegando cahves para API 
+# with open("../senhas.txt", "r") as f:
+# 	linhas = f.readlines()
+# 	cfKey = linhas[3].strip()
+# 	cfSecret = linhas[5].strip()
+# 	user = linhas[7].strip()
+# 	password = linhas[9].strip()
 
-with open("../senhas.txt", "r") as f:
-	linhas = f.readlines()
-	cfKey = linhas[3].strip()
-	cfSecret = linhas[5].strip()
-
-with open("contests_ids.txt", "r") as f:
-	lista = f.readlines()
-	for ids in lista:
+def run_script(cfKey, cfSecret, user, password):
+	lista_ids = get_contest_ids(user, password)
+	for ids in lista_ids:
 		getStandings(cfKey, cfSecret, ids.strip())
 	# getFilteredContests(lista[1].strip(), lista[3].strip(), 1, "description")
